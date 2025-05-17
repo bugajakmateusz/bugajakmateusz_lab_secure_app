@@ -1,4 +1,8 @@
 name: Perform Mixeway Scan
+on:
+    push:
+        branches:
+            - '*'
 jobs:
 mixeway-scan:
     name: Mixeway Scanning

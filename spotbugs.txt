@@ -1,0 +1,373 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.appsecco:dvja >--------------------------
+[INFO] Building dvja 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- spotbugs-maven-plugin:4.0.4:help (default-cli) @ dvja ---
+[INFO] SpotBugs Maven Plugin 4.0.4
+  This Plug-In generates reports based on the SpotBugs Library
+
+This plugin has 4 goals:
+
+spotbugs:check
+
+  Available parameters:
+
+    classFilesDirectory (Default: ${project.build.outputDirectory})
+      
+      Required: Yes
+
+    debug (Default: false)
+      
+      User property: spotbugs.debug
+
+    effort (Default: Default)
+      
+      User property: spotbugs.effort
+
+    excludeBugsFile
+      
+      User property: spotbugs.excludeBugsFile
+
+    excludeFilterFile
+      
+      User property: spotbugs.excludeFilterFile
+
+    failOnError (Default: true)
+      
+      User property: spotbugs.failOnError
+
+    failThreshold
+      
+      User property: spotbugs.failThreshold
+
+    fork (Default: true)
+      
+      User property: spotbugs.fork
+
+    includeFilterFile
+      
+      User property: spotbugs.includeFilterFile
+
+    includeTests (Default: false)
+      
+      User property: spotbugs.includeTests
+
+    jvmArgs
+      
+      User property: spotbugs.jvmArgs
+
+    maxAllowedViolations (Default: 0)
+      
+      User property: spotbugs.maxAllowedViolations
+
+    maxHeap (Default: 512)
+      
+      User property: spotbugs.maxHeap
+
+    maxRank
+      
+      User property: spotbugs.maxRank
+
+    nested (Default: false)
+      
+      User property: spotbugs.nested
+
+    omitVisitors
+      
+      User property: spotbugs.omitVisitors
+
+    onlyAnalyze
+      
+      User property: spotbugs.onlyAnalyze
+
+    outputDirectory (Default: ${project.reporting.outputDirectory})
+      
+      Required: Yes
+
+    outputEncoding (Default: ${project.reporting.outputEncoding})
+      
+      User property: outputEncoding
+
+    pluginList
+      
+      User property: spotbugs.pluginList
+
+    relaxed (Default: false)
+      
+      User property: spotbugs.relaxed
+
+    skip (Default: false)
+      
+      User property: spotbugs.skip
+
+    sourceEncoding (Default: ${project.build.sourceEncoding})
+      
+      User property: encoding
+
+    spotbugsXmlOutput (Default: true)
+      
+
+    spotbugsXmlOutputDirectory (Default: ${project.build.directory})
+      
+      Required: Yes
+
+    spotbugsXmlOutputFilename (Default: spotbugsXml.xml)
+      
+      User property: spotbugs.outputXmlFilename
+
+    testClassFilesDirectory (Default: ${project.build.testOutputDirectory})
+      
+      Required: Yes
+
+    threshold (Default: Default)
+      
+      User property: spotbugs.threshold
+
+    timeout (Default: 600000)
+      
+      User property: spotbugs.timeout
+
+    trace (Default: false)
+      
+      User property: spotbugs.trace
+
+    visitors
+      
+      User property: spotbugs.visitors
+
+    xmlOutput (Default: false)
+      
+      Required: Yes
+      User property: spotbugs.xmlOutput
+
+    xmlOutputDirectory (Default: ${project.build.directory})
+      
+      Required: Yes
+
+    xrefLocation (Default: ${project.reporting.outputDirectory}/xref)
+      
+
+    xrefTestLocation (Default: ${project.reporting.outputDirectory}/xref-test)
+      
+
+spotbugs:gui
+
+  Available parameters:
+
+    classFilesDirectory (Default: ${project.build.outputDirectory})
+      
+      Required: Yes
+
+    debug (Default: false)
+      
+      User property: spotbugs.debug
+
+    effort (Default: Default)
+      
+      User property: spotbugs.effort
+
+    encoding (Default: ${project.build.sourceEncoding})
+      
+      User property: encoding
+
+    maxHeap (Default: 512)
+      
+      User property: spotbugs.maxHeap
+
+    pluginList
+      
+      User property: spotbugs.pluginList
+
+    plugins
+      
+
+    spotbugsXmlOutputDirectory (Default: ${project.build.directory})
+      
+      Required: Yes
+
+    spotbugsXmlOutputFilename (Default: spotbugsXml.xml)
+      
+      User property: spotbugs.outputXmlFilename
+
+spotbugs:help
+  Display help information on spotbugs-maven-plugin.
+  Call mvn spotbugs:help -Ddetail=true -Dgoal=<goal-name> to display parameter
+  details.
+
+  Available parameters:
+
+    detail (Default: false)
+      If true, display all settable properties for each goal.
+      User property: detail
+
+    goal
+      The name of the goal for which to show help. If unspecified, all goals
+      will be displayed.
+      User property: goal
+
+    indentSize (Default: 2)
+      The number of spaces per indentation level, should be positive.
+      User property: indentSize
+
+    lineLength (Default: 80)
+      The maximum length of a display line, should be positive.
+      User property: lineLength
+
+spotbugs:spotbugs
+
+  Available parameters:
+
+    addSourceDirs (Default: false)
+      
+      User property: spotbugs.addSourceDirs
+
+    classFilesDirectory (Default: ${project.build.outputDirectory})
+      
+      Required: Yes
+
+    debug (Default: false)
+      
+      User property: spotbugs.debug
+
+    effort (Default: Default)
+      
+      User property: spotbugs.effort
+
+    excludeBugsFile
+      
+      User property: spotbugs.excludeBugsFile
+
+    excludeFilterFile
+      
+      User property: spotbugs.excludeFilterFile
+
+    failOnError (Default: true)
+      
+      User property: spotbugs.failOnError
+
+    fork (Default: true)
+      
+      User property: spotbugs.fork
+
+    includeFilterFile
+      
+      User property: spotbugs.includeFilterFile
+
+    includeTests (Default: false)
+      
+      User property: spotbugs.includeTests
+
+    jvmArgs
+      
+      User property: spotbugs.jvmArgs
+
+    maxHeap (Default: 512)
+      
+      User property: spotbugs.maxHeap
+
+    maxRank
+      
+      User property: spotbugs.maxRank
+
+    nested (Default: false)
+      
+      User property: spotbugs.nested
+
+    omitVisitors
+      
+      User property: spotbugs.omitVisitors
+
+    onlyAnalyze
+      
+      User property: spotbugs.onlyAnalyze
+
+    outputDirectory (Default: ${project.reporting.outputDirectory})
+      
+      Required: Yes
+
+    outputEncoding (Default: ${project.reporting.outputEncoding})
+      
+      User property: outputEncoding
+
+    pluginList
+      
+      User property: spotbugs.pluginList
+
+    plugins
+      
+
+    relaxed (Default: false)
+      
+      User property: spotbugs.relaxed
+
+    skip (Default: false)
+      
+      User property: spotbugs.skip
+
+    skipEmptyReport (Default: false)
+      
+      User property: spotbugs.skipEmptyReport
+
+    sourceEncoding (Default: ${project.build.sourceEncoding})
+      
+      User property: encoding
+
+    spotbugsXmlOutput (Default: true)
+      
+
+    spotbugsXmlOutputDirectory (Default: ${project.build.directory})
+      
+      Required: Yes
+
+    spotbugsXmlOutputFilename (Default: spotbugsXml.xml)
+      
+      User property: spotbugs.outputXmlFilename
+
+    testClassFilesDirectory (Default: ${project.build.testOutputDirectory})
+      
+      Required: Yes
+
+    threshold (Default: Default)
+      
+      User property: spotbugs.threshold
+
+    timeout (Default: 600000)
+      
+      User property: spotbugs.timeout
+
+    trace (Default: false)
+      
+      User property: spotbugs.trace
+
+    userPrefs
+      
+      User property: spotbugs.userPrefs
+
+    visitors
+      
+      User property: spotbugs.visitors
+
+    xmlOutput (Default: false)
+      
+      Required: Yes
+      User property: spotbugs.xmlOutput
+
+    xmlOutputDirectory (Default: ${project.build.directory})
+      
+      Required: Yes
+
+    xrefLocation (Default: ${project.reporting.outputDirectory}/xref)
+      
+
+    xrefTestLocation (Default: ${project.reporting.outputDirectory}/xref-test)
+      
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.758 s
+[INFO] Finished at: 2025-05-17T13:07:48+02:00
+[INFO] ------------------------------------------------------------------------

@@ -16,12 +16,7 @@ mixeway-scan:
             run: |
                 docker pull mixeway/scanner:latest
         -   name: Run Scan
-            env: 
-                OSS_USERNAME: ${{ secrets.OSS_USERNAME }}
-       	       	OSS_KEY: ${{ secrets.OSS_KEY }}
-       	       	MIXEWAY_KEY: ${{ secrets.MIXEWAY_KEY }}
-       	       	MIXEWAY_PROJECT_ID: ${{ secrets.MIXEWAY_PROJECT_ID }}
-                MIXEWAY_PROJECT_NAME: ${{ secrets.MIXEWAY_PROJECT_NAME }}
             run: |
-                docker run -e MODE=STANDALONE -e OSS_USERNAME="$OSS_USERNAME" -e OSS_KEY="$OSS_KEY" -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY="$MIXEWAY_KEY" -e MIXEWAY_PROJECT_ID="$MIXEWAY_PROJECT_ID" -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME="$MIXEWAY_PROJECT_NAME" -e COMMIT_ID="${{ steps.vars.outputs.sha_short }}" -e BRANCH="${{steps.vars.outputs.branch }}" -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
+                docker run -e MODE=STANDALONE -e OSS_USERNAME="${{ secrets.OSS_USERNAME }}" -e OSS_KEY="${{ secrets.OSS_KEY }}" -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY="${{ secrets.MIXEWAY_KEY }}" -e MIXEWAY_PROJECT_ID="${{ secrets.MIXEWAY_PROJECT_ID }}" -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME="${{ secrets.MIXEWAY_PROJECT_NAME }}" -e COMMIT_ID="${{ steps.vars.outputs.sha_short }}" -e BRANCH="${{steps.vars.outputs.branch }}" -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
+
 
